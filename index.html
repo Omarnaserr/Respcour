@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مديول الريسب | Our A+ Team</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&family=Lalezar&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0c1b3a;--ice:#eaf3ff;--paper:#fff;--coral:#ff5a4e;--sun:#ffc933;--mut:#52617f}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Tajawal',sans-serif}
+html{scroll-behavior:smooth}
+body{background:var(--ice);color:var(--ink);line-height:1.7;overflow-x:hidden}
+.disp{font-family:'Lalezar','Tajawal',sans-serif;font-weight:400}
+.top{display:flex;justify-content:space-between;align-items:center;padding:14px 5%;position:sticky;top:0;z-index:20;background:rgba(234,243,255,.92);backdrop-filter:blur(8px)}
+.logo{font-family:'Lalezar';font-size:1.6rem;letter-spacing:.5px}
+.logo b{color:var(--coral)}
+.top a.btn{background:var(--ink);color:#fff;text-decoration:none;font-weight:700;padding:8px 20px;border-radius:30px;font-size:.95rem}
+.hero{position:relative;padding:40px 5% 70px;text-align:center;max-width:1100px;margin:auto}
+.big{font-family:'Lalezar';font-size:clamp(6rem,26vw,15rem);line-height:.95;color:transparent;-webkit-text-stroke:3px var(--ink);position:relative;display:inline-block}
+.big::after{content:'ريسب';position:absolute;inset:0;color:var(--coral);clip-path:inset(0 0 55% 0)}
+.hero h1{font-size:clamp(1.3rem,4vw,2rem);font-weight:900;margin-top:6px}
+.hero p{color:var(--mut);max-width:560px;margin:8px auto 0}
+.ecg{display:block;width:min(520px,90%);margin:22px auto 0}
+.ecg path{fill:none;stroke:var(--coral);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:700;stroke-dashoffset:700;animation:dr 2.4s ease-out forwards}
+@keyframes dr{to{stroke-dashoffset:0}}
+.what{max-width:1100px;margin:0 auto;padding:0 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:0;border-block:2px solid var(--ink)}
+.what div{padding:18px 16px;font-weight:700;border-inline-start:2px solid var(--ink)}
+.what div:first-child{border-inline-start:0}
+.what small{display:block;color:var(--mut);font-weight:400}
+h2.t{font-family:'Lalezar';font-weight:400;font-size:clamp(2rem,6vw,3.2rem);text-align:center;margin:70px 0 28px;scroll-margin-top:70px}
+.list{max-width:1000px;margin:auto;padding:0 5%;display:flex;flex-direction:column;gap:22px}
+.row{display:grid;grid-template-columns:minmax(150px,38%) 1fr;background:var(--c);color:#fff;border-radius:28px;overflow:hidden;min-height:210px}
+.row .ph{position:relative;overflow:hidden}
+.row img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;border-end-start-radius:0;clip-path:ellipse(100% 100% at 0 50%)}
+.row .in{padding:20px 22px;display:flex;flex-direction:column;justify-content:center;gap:2px}
+.row .s{font-family:'Lalezar';font-size:clamp(1.8rem,5vw,2.6rem);line-height:1.1}
+.row .n{font-weight:700;opacity:.92}
+.row .p{margin-top:10px;font-family:'Lalezar';font-size:clamp(3rem,10vw,4.6rem);line-height:1}
+.row .p small{font-family:'Tajawal';font-size:1rem;font-weight:700;margin-inline-start:6px;opacity:.9}
+.c1{--c:#3b82f6}.c2{--c:#7c4dff}.c3{--c:#0ea5a0}.c4{--c:#16a05f}.c5{--c:#9b3fd0}
+.ticket{max-width:1000px;margin:70px auto 0;width:90%;background:var(--ink);color:#fff;border-radius:30px;position:relative;padding:40px 6% 36px;text-align:center}
+.ticket::before,.ticket::after{content:'';position:absolute;top:50%;width:46px;height:46px;border-radius:50%;background:var(--ice);transform:translateY(-50%)}
+.ticket::before{right:-23px}.ticket::after{left:-23px}
+.ticket .k{display:inline-block;background:var(--sun);color:var(--ink);font-weight:900;padding:4px 22px;border-radius:30px}
+.ticket h3{font-family:'Lalezar';font-weight:400;font-size:clamp(2rem,6vw,3rem);margin:10px 0 6px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.tags span{border:1.5px solid rgba(255,255,255,.35);border-radius:30px;padding:2px 16px;font-weight:700}
+.tags span::before{content:'✓ ';color:var(--sun)}
+.pr{display:flex;align-items:flex-end;justify-content:center;gap:20px;margin:26px 0 6px;flex-wrap:wrap}
+.pr .o{font-size:1.5rem;text-decoration:line-through;text-decoration-color:var(--coral);text-decoration-thickness:3px;opacity:.7;font-weight:700}
+.pr .nw{font-family:'Lalezar';font-size:clamp(5rem,20vw,9rem);line-height:.9;color:var(--sun)}
+.pr .nw small{font-family:'Tajawal';font-size:1.4rem;color:#fff;font-weight:700}
+.wk{color:var(--coral);font-weight:900;font-size:1.2rem}
+.cd{margin-top:18px;display:flex;gap:10px;justify-content:center;direction:ltr}
+.cd div{background:rgba(255,255,255,.1);border-radius:14px;padding:8px 14px;min-width:70px}
+.cd b{display:block;font-family:'Lalezar';font-weight:400;font-size:2rem;line-height:1.1}
+.cd small{font-size:.8rem;opacity:.8}
+.fr{max-width:1000px;margin:26px auto 0;width:90%;border:3px dashed var(--ink);border-radius:26px;padding:24px;text-align:center;font-weight:700;font-size:1.2rem}
+.fr span{color:var(--coral);font-weight:900}
+.fr small{display:block;color:var(--mut);font-weight:400;font-size:.95rem}
+.pay{max-width:1000px;margin:auto;padding:0 5%;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.pay div{background:var(--paper);border-radius:22px;padding:22px;text-align:center;box-shadow:0 10px 30px rgba(12,27,58,.08)}
+.pay small{color:var(--mut);font-weight:700}
+.num{display:block;direction:ltr;font-family:'Lalezar';font-size:2rem;letter-spacing:1px}
+.end{max-width:1000px;margin:60px auto 0;width:90%;background:var(--coral);color:#fff;border-radius:30px;padding:36px 20px;text-align:center}
+.end h3{font-family:'Lalezar';font-weight:400;font-size:2.2rem}
+.end a.w{display:inline-block;margin-top:14px;background:#fff;color:var(--ink);text-decoration:none;font-weight:900;font-size:1.2rem;padding:13px 36px;border-radius:40px}
+.soc{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.soc a{color:#fff;font-weight:700;text-decoration:none;border:2px solid rgba(255,255,255,.7);padding:6px 18px;border-radius:30px}
+footer{text-align:center;color:var(--mut);padding:34px 0;font-size:.9rem}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+@media(max-width:560px){.row{grid-template-columns:40% 1fr}.what div{border-inline-start:0;border-top:2px solid var(--ink)}.what div:first-child{border-top:0}}
+@media(prefers-reduced-motion:reduce){.ecg path{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="top"><div class="logo">Our <b>A+</b> Team</div><a class="btn" href="https://wa.me/201558325525" target="_blank" rel="noopener">احجز الآن</a></div>
+
+<header class="hero">
+<div class="big">ريسب</div>
+<h1>Respiratory Module · Basic Course</h1>
+<p>Your A+, Our Mission. شرح المنهج كامل من الأساس لحد ليلة الامتحان، مع نخبة متخصصة في كل مادة.</p>
+<svg class="ecg" viewBox="0 0 520 60" aria-hidden="true"><path d="M0 30H190l14-24 20 50 18-42 12 16H520"/></svg>
+</header>
+
+<section class="what">
+<div>شرح أساسي<small>بالتفصيل للمنهج كامل</small></div>
+<div>شرح عملي<small>لكل المواد</small></div>
+<div>مراجعات ليالي الامتحانات<small>في وقت مناسب</small></div>
+<div>أسئلة MCQ<small>متابعة وحل دوري</small></div>
+</section>
+
+<h2 class="t" id="doctors">الدكاترة والأسعار</h2>
+<section class="list">
+<article class="row c1"><div class="ph"><img src="images/anatomy.jpg" alt="د. محمد أبوالعزم"></div><div class="in"><div class="s">Anatomy</div><div class="n">د. محمد أبوالعزم</div><div class="p">350<small>جنيه</small></div></div></article>
+<article class="row c2"><div class="ph"><img src="images/physiology.jpg" alt="د. محمد عمر"></div><div class="in"><div class="s">Physiology</div><div class="n">د. محمد عمر</div><div class="p">400<small>جنيه</small></div></div></article>
+<article class="row c3"><div class="ph"><img src="images/microbiology.jpg" alt="د. محمد القط"></div><div class="in"><div class="s">Microbiology</div><div class="n">د. محمد القط</div><div class="p">375<small>جنيه</small></div></div></article>
+<article class="row c4"><div class="ph"><img src="images/pharmacology.jpg" alt="د. محمد علي"></div><div class="in"><div class="s">Pharmacology</div><div class="n">د. محمد علي</div><div class="p">200<small>جنيه</small></div></div></article>
+<article class="row c5"><div class="ph"><img src="images/histology.jpg" alt="د. عبدالرحمن عبدالجواد"></div><div class="in"><div class="s">Histology</div><div class="n">د. عبدالرحمن عبدالجواد</div><div class="p">200<small>جنيه</small></div></div></article>
+</section>
+
+<section class="ticket" id="package">
+<span class="k">Special Offer</span>
+<h3>باكج المواد كاملة</h3>
+<div class="tags"><span>Anatomy</span><span>Physiology</span><span>Microbiology</span><span>Pharmacology</span><span>Histology</span></div>
+<div class="pr"><div class="o">1400 جـ</div><div class="nw">1200<small> جنيه</small></div></div>
+<div class="wk">لمدة أسبوع فقط</div>
+<div class="cd" id="cd" aria-live="off"><div><b id="d">0</b><small>يوم</small></div><div><b id="h">0</b><small>ساعة</small></div><div><b id="m">0</b><small>دقيقة</small></div><div><b id="s">0</b><small>ثانية</small></div></div>
+<p style="margin-top:16px;opacity:.7;font-size:.9rem">مجموع المواد منفصلة 1525 جـ · الاشتراك ساري حتى نهاية الفاينل</p>
+</section>
+
+<section class="fr">🫂 عرض الصحاب: خصم خاص لـ <span>5 أفراد فأكثر</span><small>تواصل مع السكرتير لمعرفة التفاصيل</small></section>
+
+<h2 class="t" id="pay">طرق الدفع</h2>
+<section class="pay">
+<div><small>محفظة إلكترونية</small><span class="num">01558325525</span></div>
+<div><small>إنستا باي</small><span class="num">01220162659</span></div>
+</section>
+
+<section class="end" id="contact">
+<h3>للاستفسار والاشتراك</h3>
+<span class="num">01558325525</span><small>واتساب فقط · رقم السكرتير</small><br>
+<a class="w" href="https://wa.me/201558325525" target="_blank" rel="noopener">تواصل على واتساب</a>
+<div class="soc"><a href="https://chat.whatsapp.com/GdnkOSJdmrmJojx9hTyeWb" target="_blank" rel="noopener">جروب الواتساب</a><a href="https://www.facebook.com/share/19x8FSVVCN/" target="_blank" rel="noopener">فيسبوك</a><a href="https://t.me/aplusbns123" target="_blank" rel="noopener">تليجرام</a></div>
+</section>
+<footer>© 2026 Our A+ Team</footer>
+
+<script>
+(function(){
+var K='resp_offer_expiry_v2',e;
+try{e=parseInt(localStorage.getItem(K));if(!e){e=Date.now()+7*864e5;localStorage.setItem(K,e)}}catch(x){e=Date.now()+7*864e5}
+function g(i){return document.getElementById(i)}
+function t(){var d=Math.max(0,e-Date.now());
+g('d').textContent=Math.floor(d/864e5);g('h').textContent=Math.floor(d%864e5/36e5);g('m').textContent=Math.floor(d%36e5/6e4);g('s').textContent=Math.floor(d%6e4/1e3);
+if(!d)g('cd').innerHTML='<b style="font-size:1.2rem">انتهى عرض الأسبوع، تواصل معنا لمعرفة السعر الحالي</b>'}
+t();setInterval(t,1000);
+})();
+</script>
+</body>
+</html>
